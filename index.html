@@ -1,48 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planning App Link</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            text-align: center;
-            background-color: #f5f5f5;
+  <meta charset="UTF-8" />
+  <title>Stockport Planning Applications | Search & View Local Developments</title>
+  <meta name="description" content="Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments with our easy-to-use planning search." />
+  <meta name="keywords" content="stockport planning applications, search planning applications stockport, stockport council planning portal, planning applications near me stockport, planning permission stockport, planning applications Cheadle, planning applications Bramhall, planning applications Marple, planning applications Hazel Grove, planning applications Poynton, planning applications Heaton Moor, planning applications Reddish, stockport development news, stockport property development, conservation areas stockport, planning appeals stockport, house extension planning permission stockport" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Stockport Planning Applications" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Stockport Planning Applications | Search & View Local Developments" />
+  <meta property="og:description" content="Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments with our easy-to-use planning search." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://skplanning.org/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1740593025825-48639ecc63fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stockport Planning Applications | Search & View Local Developments" />
+  <meta name="twitter:description" content="Search and view the latest planning applications in Stockport, Greater Manchester." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://skplanning.org/" />
+
+  <!-- Structured Data FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I view planning applications in Stockport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can use our site to search by postcode, street name, or planning reference. We collect and display applications from Stockport Council in an easy-to-read format."
         }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      },
+      {
+        "@type": "Question",
+        "name": "Can I object to a planning application in Stockport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Each application includes a link to the official council portal where you can submit comments, objections, or support for the application."
         }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
+      },
+      {
+        "@type": "Question",
+        "name": "How often are Stockport planning applications updated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information."
         }
-        .link-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
-        .link-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stockport Planning Applications",
+    "url": "https://skplanning.org",
+    "description": "Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stockport",
+      "addressRegion": "Greater Manchester",
+      "addressCountry": "UK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.4084,
+      "longitude": -2.1575
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Stockport, Greater Manchester"
+    },
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Stockport",
+      "https://www.stockport.gov.uk/planning-applications"
+    ]
+  }
+  </script>
+
+  <!-- Basic CSS -->
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; line-height:1.6; background:#fff; color:#333; }
+    header { background:#166534; color:#fff; position:sticky; top:0; z-index:50; }
+    header .container { max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:1rem; }
+    header img { height:48px; width:48px; border-radius:8px; object-fit:cover; }
+    header nav a { color:#fff; margin-left:20px; text-decoration:none; font-weight:500; }
+    header nav a:hover { color:#d1fae5; }
+
+    section { padding:4rem 1rem; }
+    .hero { background:linear-gradient(135deg,#f0fdf4,#dcfce7); text-align:center; }
+    .hero h1 { font-size:2.5rem; font-weight:bold; color:#065f46; }
+    .hero p { font-size:1.2rem; color:#047857; max-width:800px; margin:1rem auto; }
+    .btn { display:inline-block; padding:1rem 2rem; border-radius:8px; font-size:1rem; font-weight:600; text-decoration:none; transition:.3s; }
+    .btn-primary { background:#166534; color:#fff; }
+    .btn-primary:hover { background:#14532d; }
+    .btn-outline { border:2px solid #166534; color:#166534; }
+    .btn-outline:hover { background:#166534; color:#fff; }
+
+    .grid { display:grid; gap:1.5rem; }
+    .grid-2 { grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); }
+    .grid-3 { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+    .grid-4 { grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+
+    .card { background:#fff; border:1px solid #bbf7d0; border-radius:12px; padding:1.5rem; transition:.3s; }
+    .card:hover { box-shadow:0 4px 10px rgba(0,0,0,.1); transform:translateY(-4px); }
+
+    h2 { text-align:center; font-size:2rem; font-weight:bold; margin-bottom:2rem; }
+
+    footer { background:#064e3b; color:#d1fae5; text-align:center; padding:2rem; }
+  </style>
 </head>
 <body>
+
+  <!-- Header -->
+  <header>
     <div class="container">
-        <h1>Planning App</h1>
-        <p>Click the link below to access the planning application:</p>
-        <a href="https://app.skplanning.org" class="link-button" target="_blank">Go to SK Planning App</a>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <img src="https://skplanning.org/images/viaduct.png" alt="Stockport Viaduct" />
+        <a href="https://skplanning.org" style="color:white;text-decoration:none;font-size:1.2rem;font-weight:bold;">Stockport Planning</a>
+      </div>
+      <nav>
+        <a href="https://skplanning.org">Home</a>
+        <a href="/app" class="btn btn-outline">Search Applications</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Search Stockport Planning Applications</h1>
+    <p>Welcome to your one-stop resource for planning applications in Stockport, UK. Easily search, track, and view the latest planning applications across Stockport.</p>
+    <a href="app.skplanning.org" class="btn btn-primary">Start Searching Now</a>
+    <a href="#learn-more" class="btn btn-outline">Learn More</a>
+  </section>
+
+  <!-- Latest Applications -->
+  <section>
+    <h2>Latest Planning Applications in Stockport</h2>
+    <div class="grid grid-4">
+      <div class="card"><h3>Location Search</h3><p>See recent applications near your postcode.</p></div>
+      <div class="card"><h3>Real-time Updates</h3><p>Track decisions from Stockport Council.</p></div>
+      <div class="card"><h3>Detailed Information</h3><p>Find details of housing, retail, and infrastructure developments.</p></div>
+      <div class="card"><h3>Community Engagement</h3><p>Discover opportunities to support or object to planning applications.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="/app" class="btn btn-primary">Search Applications</a>
+    </div>
+  </section>
+
+  <!-- Popular Searches -->
+  <section style="background:#f0fdf4;">
+    <h2>Popular Searches in Stockport</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Planning applications in Cheadle</h3><a href="https://app.skplanning.org/?ward=Chdle+East+%26+Chdle+Hulme+North+%28Chea%29" class="btn btn-outline">View Applications</a></div>
+      <div class="card"><h3>Planning applications in Central Stockport</h3><a href="https://app.skplanning.org/?ward=Brinnington+%26+Stockport+Central+%28Stck%29" class="btn btn-outline">View Applications</a></div>
+      <div class="card"><h3>Planning applications in Heald Green</h3><a href="https://skplanning.org/?ward=Heald+Green+%28Chea%29" class="btn btn-outline">View Applications</a></div>
+    </div>app.
+  </section>
+
+  <!-- How to Find -->
+  <section id="learn-more">
+    <h2>How to Find Stockport Council Planning Applications</h2>
+    <div class="card" style="max-width:700px;margin:auto;background:#ecfdf5;">
+      <p>Stockport Council's official planning portal can be difficult to navigate. Our site offers:</p>
+      <ul>
+        <li>Fast and simple search tools</li>
+        <li>A clear layout of application details</li>
+        <li>Regularly refreshed data from Stockport Council</li>
+      </ul>
+      <p>For official documentation, visit the Stockport Council Planning Portal.</p>
+      <a href="https://www.stockport.gov.uk/topic/planning" target="_blank" class="btn btn-outline">Visit Council Portal</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="grid grid-2" style="max-width:900px;margin:auto;">
+      <div class="card"><h3>How do I view planning applications in Stockport?</h3><p>You can search by postcode, street name, or planning reference.</p></div>
+      <div class="card"><h3>Can I object to a planning application?</h3><p>Yes, you can submit comments via the council portal.</p></div>
+      <div class="card"><h3>How often are applications updated?</h3><p>New applications are usually published weekly by the council.</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>This website provides information about planning applications in Stockport, Greater Manchester. We are not affiliated with Stockport Metropolitan Borough Council.</p>
+  </footer>
+
 </body>
 </html>
