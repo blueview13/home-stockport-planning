@@ -1,30 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stockport Planning Applications | Search & View Local Developments</title>
-  <meta name="description" content="Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments with our easy-to-use planning search." />
-  <meta name="keywords" content="stockport planning applications, search planning applications stockport, stockport council planning portal, planning applications near me stockport, planning permission stockport, planning applications Cheadle, planning applications Bramhall, planning applications Marple, planning applications Hazel Grove, planning applications Poynton, planning applications Heaton Moor, planning applications Reddish, stockport development news, stockport property development, conservation areas stockport, planning appeals stockport, house extension planning permission stockport" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Stockport Planning Applications" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Search and view the latest planning applications in Stockport, Greater Manchester. Explore local developments in Cheadle, Hazel Grove, Marple, Bramhall, and more.">
+  <link rel="canonical" href="https://skplanning.org/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Stockport Planning Applications | Search & View Local Developments" />
-  <meta property="og:description" content="Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments with our easy-to-use planning search." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://skplanning.org/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1740593025825-48639ecc63fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" />
+  <meta property="og:title" content="Stockport Planning Applications">
+  <meta property="og:description" content="Search and view planning applications in Stockport, Greater Manchester.">
+  <meta property="og:url" content="https://skplanning.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://skplanning.org/images/viaduct.png">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Stockport Planning Applications | Search & View Local Developments" />
-  <meta name="twitter:description" content="Search and view the latest planning applications in Stockport, Greater Manchester." />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stockport Planning Applications">
+  <meta name="twitter:description" content="Search and view planning applications in Stockport, Greater Manchester.">
+  <meta name="twitter:image" content="https://skplanning.org/images/viaduct.png">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://skplanning.org/" />
+  <!-- Styles (recommend moving to external .css file) -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0057b8;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 80px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background: #e9f4ff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .faq, .latest {
+      margin: 40px 0;
+    }
+    .faq h2, .latest h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #80c0ff;
+    }
+    @media(max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
 
-  <!-- Structured Data FAQ -->
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://skplanning.org",
+    "name": "Stockport Planning Applications",
+    "description": "Search and view the latest planning applications in Stockport, Greater Manchester.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://app.skplanning.org/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,48 +127,97 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How do I view planning applications in Stockport?",
+        "name": "How do I search for planning applications in Stockport?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can use our site to search by postcode, street name, or planning reference. We collect and display applications from Stockport Council in an easy-to-read format."
+          "text": "You can search Stockport planning applications by keyword, postcode, or ward on skplanning.org."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I object to a planning application in Stockport?",
+        "name": "Can I get email alerts for new planning applications?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Each application includes a link to the official council portal where you can submit comments, objections, or support for the application."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How often are Stockport planning applications updated?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information."
+          "text": "Yes, you can create custom alerts and receive updates when new planning applications are submitted in your area."
         }
       }
     ]
   }
   </script>
+</head>
+<body>
+  <header>
+    <img src="https://skplanning.org/images/viaduct.png" alt="Stockport Viaduct Logo">
+    <h1>Stockport Planning Applications</h1>
+    <nav>
+      <a href="#search">Search</a>
+      <a href="#alerts">Alerts</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Structured Data Local Business -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Stockport Planning Applications",
-    "url": "https://skplanning.org",
-    "description": "Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Stockport",
-      "addressRegion": "Greater Manchester",
-      "addressCountry": "UK"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
+  <main class="container">
+    <section id="search" class="hero">
+      <h1>Search Stockport Planning Applications</h1>
+      <p>View the latest planning applications across Stockport, Greater Manchester. Stay informed about developments in your local area.</p>
+      <a href="https://app.skplanning.org" class="btn">Search Applications Now</a>
+    </section>
+
+    <section id="alerts" class="cards">
+      <div class="card">
+        <h2>Create Planning Alerts</h2>
+        <p>Get email notifications about new applications in your area. Personalise by postcode, street, or ward.</p>
+        <a href="https://app.skplanning.org/alerts">Set Up a Planning Alert</a>
+      </div>
+      <div class="card">
+        <h2>Popular Stockport Areas</h2>
+        <ul>
+          <li><a href="https://app.skplanning.org/?ward=Cheadle+East">Cheadle East</a></li>
+          <li><a href="https://app.skplanning.org/?ward=Hazel+Grove">Hazel Grove</a></li>
+          <li><a href="https://app.skplanning.org/?ward=Marple">Marple</a></li>
+          <li><a href="https://app.skplanning.org/?ward=Bramhall">Bramhall</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Official Council Portals</h2>
+        <p>For full details or to comment on an application, visit:</p>
+        <ul>
+          <li><a href="https://www.stockport.gov.uk/planning-applications" rel="noopener noreferrer">Stockport Council Planning Portal</a></li>
+          <li><a href="https://www.planningportal.co.uk/" rel="noopener noreferrer">UK National Planning Portal</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="latest" class="latest">
+      <h2>Latest Planning Applications</h2>
+      <p><em>Example: This section can show recent applications pulled from your database or API.</em></p>
+      <ul>
+        <li>Ref: DC/096708 – Proposed extension at SK1 1LL (Updated: Aug 2025)</li>
+        <li>Ref: DC/097012 – Residential development in Cheadle</li>
+        <li>Ref: DC/097450 – Change of use, Bramhall Road</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="card">
+        <h3>How do I search for planning applications in Stockport?</h3>
+        <p>You can search by keyword, address, postcode, or ward using our <a href="https://app.skplanning.org">planning search tool</a>.</p>
+      </div>
+      <div class="card">
+        <h3>Can I get alerts for new planning applications?</h3>
+        <p>Yes! Use our <a href="https://app.skplanning.org/alerts">custom alerts</a> to receive email updates for applications in your area.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 Stockport Planning Applications | <a href="/about">About</a> | <a href="/contact">Contact</a></p>
+    <p>Last updated: August 2025</p>
+  </footer>
+</body>
+</html>      "@type": "GeoCoordinates",
       "latitude": 53.4084,
       "longitude": -2.1575
     },
