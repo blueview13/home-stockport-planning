@@ -701,6 +701,634 @@
     }
     </script>
 </body>
+</html>            width: auto;
+        }
+        
+        .header-logo a {
+            color: #166534;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .header-logo a:hover {
+            color: #15803d;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+            padding: 5rem 0;
+        }
+        
+        .hero-content {
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #166534;
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero h1 {
+                font-size: 3.75rem;
+            }
+        }
+        
+        .hero-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: #166534;
+            margin-bottom: 2rem;
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #166534;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .hero-button:hover {
+            background-color: #15803d;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+        
+        /* Cards Section */
+        .cards-section {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+        
+        .cards-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .card {
+            background-color: #ffffff;
+            border: 2px solid #bbf7d0;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-0.5rem);
+            border-color: #4ade80;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+        
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .card p {
+            color: #374151;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .card li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            color: #374151;
+        }
+        
+        .card li svg {
+            margin-right: 0.75rem;
+            margin-top: 0.125rem;
+            flex-shrink: 0;
+        }
+        
+        .bullet {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #16a34a;
+            border-radius: 50%;
+            margin-right: 1rem;
+            margin-top: 0.75rem;
+            flex-shrink: 0;
+        }
+        
+        .card-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffffff;
+            border: 2px solid #16a34a;
+            color: #16a34a;
+            text-decoration: none;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .card-button:hover {
+            background-color: #16a34a;
+            color: #ffffff;
+        }
+        
+        /* Popular Searches */
+        .popular-searches {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .popular-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background-color: #f0fdf4;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .popular-link:hover {
+            background-color: #dcfce7;
+        }
+        
+        .popular-link span {
+            color: #374151;
+        }
+        
+        .popular-link:hover span {
+            color: #166534;
+        }
+        
+        .popular-link svg {
+            transition: transform 0.3s ease;
+        }
+        
+        .popular-link:hover svg {
+            transform: translateX(0.25rem);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+            background-color: #f0fdf4;
+        }
+        
+        .faq-header {
+            text-center;
+            margin-bottom: 3rem;
+        }
+        
+        .faq-header h2 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-top: 1rem;
+        }
+        
+        .faq-container {
+            max-width: 64rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .faq-card {
+            background-color: #ffffff;
+            border: 2px solid #bbf7d0;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-0.5rem);
+            border-color: #4ade80;
+        }
+        
+        .faq-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .faq-content svg {
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+        
+        .faq-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.75rem;
+        }
+        
+        .faq-content p {
+            color: #374151;
+            line-height: 1.75;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #166534;
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            color: #bbf7d0;
+        }
+        
+        /* Icons */
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor;
+        }
+        
+        .icon-lg {
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .icon-xl {
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        .icon-green {
+            color: #16a34a;
+        }
+        
+        .icon-green-600 {
+            color: #16a34a;
+        }
+        
+        .icon-green-500 {
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="/images/viaduct.png" alt="Stockport Viaduct">
+                    <a href="https://skplanning.org">Stockport Planning Applications</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Search Stockport Planning Applications</h1>
+                <div class="hero-icons">
+                    <svg class="icon-xl icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <svg class="icon-lg icon-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
+                <p>Welcome to your one-stop resource for planning applications in Stockport, UK. Our site makes it easy to search, track, and view the latest planning applications across Stockport. Whether you're a local resident, developer, or business owner, you can stay informed about new housing, commercial projects, extensions, and more. Search by post code, ward, date range or anything else!</p>
+                <a href="https://app.skplanning.org" class="hero-button">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    Start Searching Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Cards Section -->
+    <section class="cards-section">
+        <div class="container">
+            <div class="cards-grid">
+                
+                <!-- Card 1: Create an Alert -->
+                <div class="card">
+                    <div class="card-header">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5-5-5h5v-5a7.5 7.5 0 017.5-7.5 7.5 7.5 0 01-7.5 7.5V17z"></path>
+                        </svg>
+                        <h2>Create an Alert</h2>
+                    </div>
+                    <p>We update regularly with new planning submissions so you can:</p>
+                    <ul>
+                        <li>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            See recent applications near your postcode
+                        </li>
+                        <li>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Track decisions from Stockport Council
+                        </li>
+                        <li>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Find details of housing, retail, and infrastructure developments
+                        </li>
+                        <li>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                            </svg>
+                            Discover opportunities to support or object to planning applications
+                        </li>
+                    </ul>
+                    <a href="https://app.skplanning.org" class="card-button">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5-5-5h5v-5a7.5 7.5 0 017.5-7.5 7.5 7.5 0 01-7.5 7.5V17z"></path>
+                        </svg>
+                        Create an alert here
+                    </a>
+                </div>
+
+                <!-- Card 2: Popular Searches -->
+                <div class="card">
+                    <div class="card-header">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <h2>Popular Searches in Stockport</h2>
+                    </div>
+                    <div class="popular-searches">
+                        <a href="https://app.skplanning.org/?ward=Chdle+East+%26+Chdle+Hulme+North+%28Chea%29" class="popular-link">
+                            <span>Planning applications in Cheadle</span>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                        <a href="https://app.skplanning.org/?ward=Brinnington+%26+Stockport+Central+%28Stck%29" class="popular-link">
+                            <span>Planning applications in Central Stockport</span>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                        <a href="https://app.skplanning.org/?ward=Heald+Green+%28Chea%29" class="popular-link">
+                            <span>Planning applications in Heald Green</span>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                        <a href="https://app.skplanning.org/?ward=Marple+South+%26+High+Lane%28Marp%29" class="popular-link">
+                            <span>Planning applications in Marple</span>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                        <a href="https://app.skplanning.org/?ward=Hazel+Grove+%28Step%29" class="popular-link">
+                            <span>Planning applications in Hazel Grove</span>
+                            <svg class="icon icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: How to Find Applications -->
+                <div class="card">
+                    <div class="card-header">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <h2>How to Find Stockport Council Planning Applications</h2>
+                    </div>
+                    <p>Stockport Council's official planning portal can be difficult to navigate. Our site offers:</p>
+                    <ul>
+                        <li>
+                            <div class="bullet"></div>
+                            Fast and simple search tools
+                        </li>
+                        <li>
+                            <div class="bullet"></div>
+                            A clear layout of application details
+                        </li>
+                        <li>
+                            <div class="bullet"></div>
+                            Regularly refreshed data, linked directly to Stockport Council's planning system
+                        </li>
+                    </ul>
+                    <p>For official documentation, you can visit the Stockport Council Planning Portal.</p>
+                    <a href="https://www.stockport.gov.uk/topic/planning" target="_blank" rel="noopener noreferrer" class="card-button">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                        Visit Council Portal
+                    </a>
+                </div>
+
+                <!-- Card 4: Making an Application -->
+                <div class="card">
+                    <div class="card-header">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                        </svg>
+                        <h2>Thinking of making an application? Find out what you need to know.</h2>
+                    </div>
+                    <p>Visit the Planning Portal for in-depth information about making your own planning application.</p>
+                    <a href="https://www.planningportal.co.uk/" target="_blank" rel="noopener noreferrer" class="card-button">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                        Visit Planning Portal
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <svg class="icon-xl icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <div>
+                            <h3>How do I view planning applications in Stockport?</h3>
+                            <p>You can use our site to search by postcode, street name, or planning reference. We collect and display applications from Stockport Council in an easy-to-read format.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                        <div>
+                            <h3>Can I object to a planning application in Stockport?</h3>
+                            <p>Yes. Each application includes a link to the official council portal where you can submit comments, objections, or support for the application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <div>
+                            <h3>How often are Stockport planning applications updated?</h3>
+                            <p>New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>This website provides information about planning applications in Stockport, Greater Manchester. We are not affiliated with Stockport Metropolitan Borough Council.</p>
+        </div>
+    </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I view planning applications in Stockport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can use our site to search by postcode, street name, or planning reference. We collect and display applications from Stockport Council in an easy-to-read format."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I object to a planning application in Stockport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each application includes a link to the official council portal where you can submit comments, objections, or support for the application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often are Stockport planning applications updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Stockport Planning Applications",
+      "url": "https://skplanning.org",
+      "description": "Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Stockport",
+        "addressRegion": "Greater Manchester",
+        "addressCountry": "UK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.4084,
+        "longitude": -2.1575
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Stockport, Greater Manchester"
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Stockport",
+        "https://www.stockport.gov.uk/planning-applications"
+      ]
+    }
+    </script>
+</body>
 </html>      border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
