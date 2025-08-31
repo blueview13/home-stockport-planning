@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="9TS6Vso7MI8YRu20dyTFoEoCYYoPGG8uSBWG6QgXTVs" />    <meta name="geo.region" content="GB-SKP">
-<meta name="geo.placename" content="Stockport, Greater Manchester">
-<meta name="geo.position" content="53.4084;-2.1575">    <title>Stockport Planning Applications | Search & View Local Developments</title>
+    <meta name="google-site-verification" content="9TS6Vso7MI8YRu20dyTFoEoCYYoPGG8uSBWG6QgXTVs" />    
+    <meta name="geo.region" content="GB-SKP">
+    <meta name="geo.placename" content="Stockport, Greater Manchester">
+    <meta name="geo.position" content="53.4084;-2.1575">
+    <title>Stockport Planning Applications | Search & View Local Developments</title>
     <meta name="description" content="Search and view the latest planning applications in Stockport, Greater Manchester. Stay updated on housing, commercial, and local developments with our easy-to-use planning search.">
     <meta name="keywords" content="stockport planning applications, search planning applications stockport, stockport council planning portal, planning applications near me stockport, planning permission stockport, planning applications Cheadle, planning applications Bramhall, planning applications Marple, planning applications Hazel Grove, planning applications Poynton, planning applications Heaton Moor, planning applications Reddish, stockport development news, stockport property development, conservation areas stockport, planning appeals stockport, house extension planning permission stockport">
     <meta name="robots" content="index, follow">
@@ -20,10 +23,16 @@
     <link rel="canonical" href="https://skplanning.org/">
     
     <style>
+        /* Reset / base */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        /* Prevent iOS Safari auto-resize of text */
+        html {
+            -webkit-text-size-adjust: 100%;
         }
         
         body {
@@ -88,6 +97,20 @@
         
         .header-logo a:hover {
             color: #15803d;
+        }
+
+        /* Very small screens: prevent overflow from logo+title */
+        @media (max-width: 400px) {
+            .header-content {
+                flex-wrap: wrap;
+                gap: 0.25rem;
+            }
+            .header-logo img {
+                height: 2.5rem;
+            }
+            .header-logo a {
+                font-size: 1rem;
+            }
         }
         
         /* Hero Section */
@@ -179,7 +202,8 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
+        /* Optional: keep same desktop layout; we only apply very small-screen changes below */
         .card {
             background-color: #ffffff;
             border: 2px solid #bbf7d0;
@@ -187,6 +211,13 @@
             padding: 2rem;
             transition: all 0.3s ease;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reduce padding on very small phones to avoid cramped layout */
+        @media (max-width: 360px) {
+            .card {
+                padding: 1rem;
+            }
         }
         
         .card:hover {
@@ -286,12 +317,22 @@
         
         .popular-link span {
             color: #374151;
+            /* allow the text to take available space so icons don't push lines on small screens */
+            flex: 1 1 auto;
         }
         
         .popular-link:hover span {
             color: #166534;
         }
         
+        /* For compact screens, reduce the icon size so lines don't wrap */
+        @media (max-width: 480px) {
+            .popular-link svg {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
+
         .popular-link svg {
             transition: transform 0.3s ease;
         }
@@ -351,6 +392,7 @@
             flex-shrink: 0;
         }
         
+        /* Explicit sizes to enforce consistency across devices (fixes the iOS sizing bug) */
         .faq-content h3 {
             font-size: 1.25rem;
             font-weight: 600;
@@ -359,6 +401,7 @@
         }
         
         .faq-content p {
+            font-size: 1rem; /* explicit: matches typical desktop default (16px) */
             color: #374151;
             line-height: 1.75;
         }
@@ -373,6 +416,7 @@
         
         .footer p {
             color: #bbf7d0;
+            line-height: 1.6;
         }
         
         /* Icons */
@@ -625,13 +669,12 @@
                         </svg>
                         <div>
                             <h3>How often are Stockport planning applications updated?</h3>
-                            <p>New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information and you can receive automatic updates if you set an alert. </p>
+                            <p>New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information and you can receive automatic updates if you set an alert.</p>
                         </div>
                     </div>
                 </div>
         
-
-   <div class="faq-card">
+                <div class="faq-card">
                     <div class="faq-content">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
