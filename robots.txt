@@ -1,0 +1,28 @@
+# robots.txt for skplanning.org
+
+User-agent: *
+Allow: /
+
+# Allow access to images and other assets
+Allow: /images/
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.ico
+
+# Disallow any admin or private areas if they exist
+Disallow: /admin/
+# Disallow: /private/
+
+# Allow all search engines to access planning application data
+# This helps with local SEO for Stockport area searches
+
+# Reference to sitemap
+Sitemap: https://skplanning.org/sitemap.xml
+
+# Crawl-delay (optional - adjust if needed)
+# Crawl-delay: 1
