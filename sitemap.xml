@@ -19,6 +19,14 @@
     <priority>1.0</priority>
   </url>
 
+<url>
+    <loc>https://skplanning.org/about-us.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+
         
   <!-- Main Search Application -->
   <url>
