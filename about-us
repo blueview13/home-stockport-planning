@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="GB-SKP">
+    <meta name="geo.placename" content="Stockport, Greater Manchester">
+    <meta name="geo.position" content="53.4084;-2.1575">
+    <title>About Us | Stockport Planning Applications</title>
+    <meta name="description" content="Learn more about skplanning.org, an independent resource dedicated to making Stockport planning applications more accessible to residents, businesses, and communities.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://skplanning.org/about-us">
+    
+    <style>
+        /* Reuse existing styles from Privacy Policy page */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; min-height: 100vh; background-color: #ffffff; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 1rem; }
+        @media (min-width: 640px) { .container { padding: 0 1.5rem; } }
+        @media (min-width: 1024px) { .container { padding: 0 2rem; } }
+
+        .header { background-color: #ffffff; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 50; }
+        .header-content { display: flex; align-items: center; padding: 1rem 0; }
+        .header-logo { display: flex; align-items: center; gap: 1rem; }
+        .header-logo img { height: 3rem; width: auto; }
+        .header-logo a { color: #166534; text-decoration: none; font-size: 1.25rem; font-weight: 600; transition: color 0.3s ease; }
+        .header-logo a:hover { color: #15803d; }
+        @media (max-width: 400px) {
+            .header-content { flex-wrap: wrap; gap: 0.25rem; }
+            .header-logo img { height: 2.5rem; }
+            .header-logo a { font-size: 1rem; }
+        }
+
+        .main-content { padding: 3rem 0; background-color: #ffffff; min-height: 70vh; }
+        .content-wrapper { max-width: 56rem; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 2px solid #bbf7d0; }
+        .page-header h1 { font-size: 2.5rem; font-weight: bold; color: #166534; margin-bottom: 1rem; }
+        .page-header p { font-size: 1.125rem; color: #374151; }
+        @media (min-width: 768px) { .page-header h1 { font-size: 3rem; } }
+
+        .about-content h2 { font-size: 1.5rem; font-weight: 600; color: #1f2937; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; }
+        .about-content p { margin-bottom: 1rem; color: #374151; font-size: 1rem; }
+        .about-content ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        .about-content li { margin-bottom: 0.5rem; color: #374151; }
+        .about-content strong { font-weight: 600; color: #1f2937; }
+        .highlight-box { background-color: #f0fdf4; border: 2px solid #bbf7d0; border-radius: 0.5rem; padding: 1.5rem; margin: 1.5rem 0; }
+        .highlight-box h3 { color: #166534; margin-top: 0; }
+
+        .footer { background-color: #166534; color: #ffffff; padding: 2rem 0; text-align: center; margin-top: 4rem; }
+        .footer p { color: #bbf7d0; line-height: 1.6; margin-bottom: 1rem; }
+        .footer-links { margin-top: 1rem; }
+        .footer-links a { color: #bbf7d0; text-decoration: none; margin: 0 1rem; transition: color 0.3s ease; }
+        .footer-links a:hover { color: #ffffff; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="/images/viaduct.png" alt="Historic Stockport Railway Viaduct">
+                    <a href="https://skplanning.org">Stockport Planning Applications</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h1>About Us</h1>
+                    <p>Helping Stockport residents navigate planning applications with ease</p>
+                </div>
+                
+                <div class="about-content">
+                    <h2>Our Mission</h2>
+                    <p><strong>skplanning.org</strong> was created to make Stockport planning applications easier to find, search, and understand. We believe that local communities should have clear, accessible access to planning information without needing to navigate complex systems.</p>
+
+                    <h2>What We Do</h2>
+                    <p>We provide a simple, independent website that allows residents, businesses, and community groups to:</p>
+                    <ul>
+                        <li>Search and view planning applications across Stockport</li>
+                        <li>Track decisions and outcomes on local developments</li>
+                        <li>Stay informed about changes in their neighbourhood</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h3>Independent Resource</h3>
+                        <p><strong>Not Affiliated:</strong> We are not connected to Stockport Metropolitan Borough Council. All application data shown on this site is sourced directly from public records and official council data.</p>
+                    </div>
+
+                    <h2>Why It Matters</h2>
+                    <p>Planning decisions affect everyone — from new housing developments to extensions, commercial projects, and community spaces. By making this information more accessible, we aim to help residents stay informed and have their voices heard.</p>
+
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li><strong>Transparency:</strong> Clear, accessible information for everyone</li>
+                        <li><strong>Independence:</strong> An unbiased, non-government resource</li>
+                        <li><strong>Community Focus:</strong> Putting local residents first</li>
+                    </ul>
+
+                    <h2>Contact Us</h2>
+                    <p>We welcome feedback, ideas, and suggestions for improving the site.</p>
+                    <p><strong>Email:</strong> <a href="mailto:admin@skplanning.org">admin@skplanning.org</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>This website provides information about planning applications in Stockport, Greater Manchester. We are not affiliated with Stockport Metropolitan Borough Council.</p>
+            <div class="footer-links">
+                <a href="https://skplanning.org">Home</a>
+                <a href="https://skplanning.org/privacy-policy">Privacy Policy</a>
+                <a href="https://skplanning.org/about-us">About Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
