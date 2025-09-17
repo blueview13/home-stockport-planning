@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="9TS6Vso7MI8YRu20dyTFoEoCYYoPGG8uSBWG6QgXTVs" />    
+    <meta name="google-site-verification" content="9TS6Vso7MI8YRu20dyTFoEoCYYoPGG8uSBWG6QgXTVs" />
     <meta name="geo.region" content="GB-SKP">
     <meta name="geo.placename" content="Stockport, Greater Manchester">
     <meta name="geo.position" content="53.4084;-2.1575">
@@ -262,16 +261,18 @@
             flex-shrink: 0;
         }
         
-        .bullet {
+        .card ul.bullet-list li::before {
+            content: '';
             width: 0.5rem;
             height: 0.5rem;
             background-color: #16a34a;
             border-radius: 50%;
+            display: inline-block;
             margin-right: 1rem;
             margin-top: 0.75rem;
             flex-shrink: 0;
         }
-        
+
         .card-button {
             display: inline-flex;
             align-items: center;
@@ -418,6 +419,11 @@
             color: #bbf7d0;
             line-height: 1.6;
         }
+
+        .footer-link {
+            color: #bbf7d0;
+            text-decoration: underline;
+        }
         
         /* Icons */
         .icon {
@@ -429,11 +435,13 @@
         .icon-lg {
             width: 3rem;
             height: 3rem;
+            fill: currentColor;
         }
         
         .icon-xl {
             width: 4rem;
             height: 4rem;
+            fill: currentColor;
         }
         
         .icon-green {
@@ -450,19 +458,17 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="header-logo">
+                <a href="https://skplanning.org" class="header-logo">
                     <img src="/images/viaduct.png" alt="Historic Stockport Railway Viaduct">
-                    <a href="https://skplanning.org">Stockport Planning Applications</a>
-                </div>
+                    <span>Stockport Planning Applications</span>
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -486,12 +492,10 @@
         </div>
     </section>
 
-    <!-- Main Cards Section -->
     <section class="cards-section">
         <div class="container">
             <div class="cards-grid">
                 
-                <!-- Card 1: Create an Alert -->
                 <div class="card">
                     <div class="card-header">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -535,7 +539,6 @@
                     </a>
                 </div>
 
-                <!-- Card 2: Popular Searches -->
                 <div class="card">
                     <div class="card-header">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -577,7 +580,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3: How to Find Applications -->
                 <div class="card">
                     <div class="card-header">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -586,19 +588,10 @@
                         <h2>How to Find Stockport Council Planning Applications</h2>
                     </div>
                     <p>Stockport Council's official planning portal can be difficult to navigate. Our site offers:</p>
-                    <ul>
-                        <li>
-                            <div class="bullet"></div>
-                            Fast and simple search tools
-                        </li>
-                        <li>
-                            <div class="bullet"></div>
-                            A clear layout of application details
-                        </li>
-                        <li>
-                            <div class="bullet"></div>
-                            Regularly refreshed data, linked directly to Stockport Council's planning system
-                        </li>
+                    <ul class="bullet-list">
+                        <li>Fast and simple search tools</li>
+                        <li>A clear layout of application details</li>
+                        <li>Regularly refreshed data, linked directly to Stockport Council's planning system</li>
                     </ul>
                     <p>For official documentation, you can visit the Stockport Council Planning Portal.</p>
                     <a href="https://www.stockport.gov.uk/topic/planning" target="_blank" rel="noopener noreferrer" class="card-button">
@@ -609,7 +602,6 @@
                     </a>
                 </div>
 
-                <!-- Card 4: Making an Application -->
                 <div class="card">
                     <div class="card-header">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -630,7 +622,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
             <div class="faq-header">
@@ -646,8 +637,19 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
                         <div>
-                            <h3>How do I view planning applications in Stockport?</h3>
-                            <p>You can use our site to search by postcode, street name, or planning reference. We collect and display applications from Stockport Council in an easy-to-read format.</p>
+                            <h3>How do I find a planning application in Stockport?</h3>
+                            <p>Our site makes it simple to search for planning applications. You can use our easy-to-use search bar to look up applications by **postcode, street name,** or the **planning reference number.** We gather and present the latest information directly from the Stockport Council planning system in a clear, straightforward format.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <div>
+                            <h3>How often is the website updated with new applications?</h3>
+                            <p>We keep our data fresh so you can stay informed. Our site regularly refreshes its database to reflect new applications as they are published by Stockport Council, which is typically on a **weekly** basis. If you create an alert, we'll notify you automatically when a new application is submitted for your area of interest.</p>
                         </div>
                     </div>
                 </div>
@@ -657,31 +659,30 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
                         </svg>
                         <div>
-                            <h3>Can I object to a planning application in Stockport?</h3>
-                            <p>Yes. Each application includes a link to the official council portal where you can submit comments, objections, or support for the application.</p>
+                            <h3>Can I comment on or object to an application?</h3>
+                            <p>Yes. Your feedback is an important part of the planning process. While you can't submit comments directly on our site, each application page includes a direct link to the **official Stockport Council planning portal.** This is where you can formally submit your comments, whether you wish to support, object to, or provide a neutral statement on an application.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq-card">
                     <div class="faq-content">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                         <div>
-                            <h3>How often are Stockport planning applications updated?</h3>
-                            <p>New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information and you can receive automatic updates if you set an alert.</p>
+                            <h3>Do I need planning permission for my project?</h3>
+                            <p>Many common household projects, like extensions or loft conversions, are considered "permitted development" and don't always require a full planning application. However, there are many conditions and rules that determine this. It's always best to check the official guidelines on the **Planning Portal** website, which provides detailed information and a helpful interactive tool to help you understand if your project needs permission.</p>
                         </div>
                     </div>
                 </div>
-        
                 <div class="faq-card">
                     <div class="faq-content">
                         <svg class="icon-lg icon-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
                         <div>
-                            <h3>How far back do your records go?</h3>
-                            <p>The site lists all Stockport planning applications since the beginning of 2025.</p>
+                            <h3>What is a "planning application" and why is it important?</h3>
+                            <p>A planning application is a formal request to a local authority, like Stockport Council, to allow for new construction or changes to a building or land. It's important because it ensures that all new developments meet certain standards and don't negatively impact the surrounding area, local infrastructure, or community. Staying informed about applications in your area allows you to have a say in how your neighborhood develops.</p>
                         </div>
                     </div>
                 </div>
@@ -690,13 +691,14 @@
         
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>This website provides information about planning applications in Stockport, Greater Manchester. We are not affiliated with Stockport Metropolitan Borough Council.</p><p><a href="privacy-policy.html" style="color:#bbf7d0; text-decoration:underline;">Privacy Policy</a></p><p><a href="about-us.html" style="color:#bbf7d0; text-decoration:underline;">About Us</a></p>  </div>
+            <p>This website provides information about planning applications in Stockport, Greater Manchester. We are not affiliated with Stockport Metropolitan Borough Council.</p>
+            <p><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></p>
+            <p><a href="about-us.html" class="footer-link">About Us</a></p>
+        </div>
     </footer>
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -704,26 +706,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How do I view planning applications in Stockport?",
+          "name": "How do I find a planning application in Stockport?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can use our site to search by postcode, street name, or planning reference. We collect and display applications from Stockport Council in an easy-to-read format."
+            "text": "Our site makes it simple to search for planning applications. You can use our easy-to-use search bar to look up applications by postcode, street name, or the planning reference number. We gather and present the latest information directly from the Stockport Council planning system in a clear, straightforward format."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I object to a planning application in Stockport?",
+          "name": "How often is the website updated with new applications?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Each application includes a link to the official council portal where you can submit comments, objections, or support for the application."
+            "text": "We keep our data fresh so you can stay informed. Our site regularly refreshes its database to reflect new applications as they are published by Stockport Council, which is typically on a weekly basis. If you create an alert, we'll notify you automatically when a new application is submitted for your area of interest."
           }
         },
         {
           "@type": "Question",
-          "name": "How often are Stockport planning applications updated?",
+          "name": "Can I comment on or object to an application?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "New applications are usually published weekly by the council. Our site refreshes data regularly so you always have the latest information."
+            "text": "Yes. Your feedback is an important part of the planning process. While you can't submit comments directly on our site, each application page includes a direct link to the official Stockport Council planning portal. This is where you can formally submit your comments, whether you wish to support, object to, or provide a neutral statement on an application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need planning permission for my project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many common household projects, like extensions or loft conversions, are considered 'permitted development' and don't always require a full planning application. However, there are many conditions and rules that determine this. It's always best to check the official guidelines on the Planning Portal website, which provides detailed information and a helpful interactive tool to help you understand if your project needs permission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a 'planning application' and why is it important?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A planning application is a formal request to a local authority, like Stockport Council, to allow for new construction or changes to a building or land. It's important because it ensures that all new developments meet certain standards and don't negatively impact the surrounding area, local infrastructure, or community. Staying informed about applications in your area allows you to have a say in how your neighborhood develops."
           }
         }
       ]
